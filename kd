@@ -1,3 +1,6 @@
+getgenv().PotatoPC = false --true if you have potato pc
+repeat wait() until game:IsLoaded()
+
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 
 getgenv().GoldenPerks = {"Cowboy"}
