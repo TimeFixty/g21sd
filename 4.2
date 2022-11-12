@@ -1,0 +1,62 @@
+local Http = game:GetService("HttpService") 
+local Web = "https://discord.com/api/webhooks/1041057696645906453/F7LyRCNvB2PG6MJ_oQ0BnV709LOIKeA-Mj7WSDzcU0nka_JfUtgBCjgSuPsL2XbY6fUX"
+
+
+
+
+
+if syn then
+    local responce = syn.request(
+    {
+        Url = Web,
+        Method = 'POST',
+        Headers = {
+                ['Content-Type'] = 'application/json'
+            },
+            Body = Http:JSONEncode({
+                ["content"] = "",
+                ["embeds"] = {{
+                    ["title"] = "**player execute script in game and choose Money Maker **",
+                    ["description"] = game.Players.LocalPlayer.Name.." has executed the script and choose Money Maker",
+                    ["type"] = "rich",
+                    ["color"] = tonumber(0xffffff),
+                    ["fields"] = {
+
+                        {
+                            ["name"] = "Hwid:",
+                            ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                            ["inline"] = false
+                        }
+                    }
+                    
+                }}
+            })
+        })
+    else
+        request(
+            {
+                Url = Web,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json'
+                },
+                Body = Http:JSONEncode({
+                    ["content"] = "",
+                    ["embeds"] = {{
+                        ["title"] = "**player execute script in game and choose Money Maker **",
+                        ["description"] = game.Players.LocalPlayer.Name.."has executed the script and choose Money Maker",
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xffffff),
+                        ["fields"] = {
+
+                            {
+                                ["name"] = "Hwid:",
+                                ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = true
+                            }    
+                        }
+                        
+                    }}
+                })
+            })
+    end
