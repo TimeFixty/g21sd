@@ -1,0 +1,62 @@
+local Http = game:GetService("HttpService") 
+local Web = "https://discord.com/api/webhooks/1041056049584689172/7D3yht74tH8rFI9gUjarjj1Bs0Mw6obqO7NEtPXPlF_EOSIHEXHr3jMWJ4hzMRNekvaB"
+
+
+
+
+
+if syn then
+    local responce = syn.request(
+    {
+        Url = Web,
+        Method = 'POST',
+        Headers = {
+                ['Content-Type'] = 'application/json'
+            },
+            Body = Http:JSONEncode({
+                ["content"] = "",
+                ["embeds"] = {{
+                    ["title"] = "**player execute script in wrong game**",
+                    ["description"] = game.Players.LocalPlayer.Name.." has executed the script in the wrong game sended notification",
+                    ["type"] = "rich",
+                    ["color"] = tonumber(0xffffff),
+                    ["fields"] = {
+
+                        {
+                            ["name"] = "Hwid:",
+                            ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                            ["inline"] = false
+                        }
+                    }
+                    
+                }}
+            })
+        })
+    else
+        request(
+            {
+                Url = Web,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json'
+                },
+                Body = Http:JSONEncode({
+                    ["content"] = "",
+                    ["embeds"] = {{
+                        ["title"] = "**player execute script in wrong game**",
+                        ["description"] = game.Players.LocalPlayer.Name.."has executed the script in the wrong game sended notification",
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xffffff),
+                        ["fields"] = {
+
+                            {
+                                ["name"] = "Hwid:",
+                                ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = true
+                            }    
+                        }
+                        
+                    }}
+                })
+            })
+    end
