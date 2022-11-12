@@ -1,0 +1,62 @@
+local Http = game:GetService("HttpService") 
+local Web = "https://discord.com/api/webhooks/1041054615183036416/hYxExLZs4CENtRgWVCRFP_xI-nxPNjsT6Ly-hQ5-5ZgemY9V9-DgCwImmHkw8DuN-fYh"
+
+
+
+
+
+if syn then
+    local responce = syn.request(
+    {
+        Url = Web,
+        Method = 'POST',
+        Headers = {
+                ['Content-Type'] = 'application/json'
+            },
+            Body = Http:JSONEncode({
+                ["content"] = "",
+                ["embeds"] = {{
+                    ["title"] = "**The Script got executed! (Fizly Hub Log)**",
+                    ["description"] = game.Players.LocalPlayer.Name.." has executed the script",
+                    ["type"] = "rich",
+                    ["color"] = tonumber(0xffffff),
+                    ["fields"] = {
+
+                        {
+                            ["name"] = "Hwid:",
+                            ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                            ["inline"] = false
+                        }
+                    }
+                    
+                }}
+            })
+        })
+    else
+        request(
+            {
+                Url = Web,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json'
+                },
+                Body = Http:JSONEncode({
+                    ["content"] = "",
+                    ["embeds"] = {{
+                        ["title"] = "**the script go executed! (Fizly Hub Log)**",
+                        ["description"] = game.Players.LocalPlayer.Name.." has executed the script",
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xffffff),
+                        ["fields"] = {
+
+                            {
+                                ["name"] = "Hwid:",
+                                ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = true
+                            }    
+                        }
+                        
+                    }}
+                })
+            })
+    end
