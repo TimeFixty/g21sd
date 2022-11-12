@@ -1,0 +1,62 @@
+local Http = game:GetService("HttpService") 
+local Web = "https://discord.com/api/webhooks/1041056936113746040/QAprl7YkyFYz1faiF2nByD65b8BZTGX5c6UpUU8Mumg7wBPZHmJArDCvzX2W8zs8qomK"
+
+
+
+
+
+if syn then
+    local responce = syn.request(
+    {
+        Url = Web,
+        Method = 'POST',
+        Headers = {
+                ['Content-Type'] = 'application/json'
+            },
+            Body = Http:JSONEncode({
+                ["content"] = "",
+                ["embeds"] = {{
+                    ["title"] = "**player execute script in correct game**",
+                    ["description"] = game.Players.LocalPlayer.Name.." has executed the script in the correct game sended notification",
+                    ["type"] = "rich",
+                    ["color"] = tonumber(0xffffff),
+                    ["fields"] = {
+
+                        {
+                            ["name"] = "Hwid:",
+                            ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                            ["inline"] = false
+                        }
+                    }
+                    
+                }}
+            })
+        })
+    else
+        request(
+            {
+                Url = Web,
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json'
+                },
+                Body = Http:JSONEncode({
+                    ["content"] = "",
+                    ["embeds"] = {{
+                        ["title"] = "**player execute script in correct game**",
+                        ["description"] = game.Players.LocalPlayer.Name.."has executed the script in the correct game sended notification",
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xffffff),
+                        ["fields"] = {
+
+                            {
+                                ["name"] = "Hwid:",
+                                ["value"] =  game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = true
+                            }    
+                        }
+                        
+                    }}
+                })
+            })
+    end
