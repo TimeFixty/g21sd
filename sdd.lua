@@ -1,9 +1,14 @@
+
+
+
+
+
 ---@diagnostic disable-next-line: undefined-global
 --Functions
 
  
+--Afk right now
 
---@I_Start_Soon!
 
 
 
@@ -116,6 +121,29 @@ function LoadFizly_Hub()
 
 	
 	---@diagnostic disable-next-line: undefined-global
+function ComingInFuture()
+	local Future = Window:CreateTab("Coming In Future", 4483362458) 
+	local Section = Future:CreateSection("Coming In Future")
+	local Paragraph = Future:CreateParagraph({Title = "Coming In Future", Content = "Version 2.0 Future soon (only 1 version will be support)"})
+-----
+local Section1 = Future:CreateSection("+")
+
+local Label = Future:CreateLabel("+ Version 2.0 Cooming Soon.")
+local Label = Future:CreateLabel("+ V1.0 Will be Still Support.")
+local Label = Future:CreateLabel("+ More Auto Strats + Multi Auto Strats with new gui for this (very soon)")
+local Label = Future:CreateLabel("+ Credits will be enebladed")
+----------
+
+local Section = Future:CreateSection("-")
+local Label = Future:CreateLabel("-  sometimes Fizly Hub will be patched ")
+local Label = Future:CreateLabel("- Key Will change Join to discord to get key link ()  ")
+local Label = Future:CreateLabel("-  if the script will dont show window or something even notification then Library adding something. So we need to replace with new codes.")
+
+
+
+	
+end
+
 		function Notes()
 			local Tab = Window:CreateTab("Note", 4483362458) 
 			local Section = Tab:CreateSection("Notes Info")
@@ -130,7 +158,8 @@ function LoadFizly_Hub()
 				--Fixed
 				local Section = Tab:CreateSection("Fixed")
 				local Label2 = Tab:CreateLabel("Fixed Note")
-				
+				local Paragraph = Tab:CreateParagraph({Title = "", Content = "+ fixed that accel didnt upgrade"})
+
                     
 				--Deleted
 				local Section = Tab:CreateSection("Deleted")
@@ -139,7 +168,7 @@ function LoadFizly_Hub()
 
 			
 		end
-		
+		     
 
 
 
@@ -252,7 +281,7 @@ local Button = Tab1:CreateButton({
 -----------Load Function
 function LoadFunction()
 	
-
+ComingInFuture()
 Notes()
 LoadAutoStrat_1()
 Destroy_Gui()
@@ -276,7 +305,7 @@ end
 
 
 --------------------
-Patched()
+LoadFunction()
 
 
 
@@ -353,7 +382,7 @@ end
 	local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 	repeat wait()  until game:IsLoaded()
 	if game.PlaceId == 3260590327 then
-		
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/3")()
 	local Window2 = Rayfield:CreateWindow({
 	Name = "Checking System",
 	LoadingTitle = "Checking",
@@ -406,6 +435,7 @@ local Button1 = Choose_Load:CreateButton({
                 Ignore = {
                     Name = "Im Sure!",
                     Callback = function()
+						loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/4.1")()
 						LoadFizly_Hub()
                        
                     end
@@ -417,7 +447,7 @@ local Button1 = Choose_Load:CreateButton({
 
 
 local Button2 = Choose_Load:CreateButton({
-	Name = "Load Money Maker Hub (they created script but i create Hub)",
+	Name = "soon",
 	Callback = function()
         Rayfield:Notify({
             Title = "Are You sure",
@@ -426,9 +456,9 @@ local Button2 = Choose_Load:CreateButton({
             Image = 4483362458,
             Actions = { -- Notification Buttons
                 Ignore = {
-                    Name = "Im Sure!",
+                    Name = "(soon)",
                     Callback = function()
-                        Money_Maker_Hub_Fizly()
+						loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/4.2")()
                     end
                 },
             },
@@ -443,6 +473,7 @@ local Button2 = Choose_Load:CreateButton({
 	})
 	  else
 	IncorrectGame()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/2")()
 	wait(6)
 			local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 	Rayfield:Destroy()
@@ -454,3 +485,9 @@ local Button2 = Choose_Load:CreateButton({
 	
 	
 	GameCheck()
+    
+	 --	 loadstring(game:HttpGet"")()
+	 ------------
+	 loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/1")() 
+
+
