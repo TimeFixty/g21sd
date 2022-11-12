@@ -1,5 +1,3 @@
-local TeleportService = game:GetService("TeleportService")
-
 
 
 
@@ -7,10 +5,9 @@ local TeleportService = game:GetService("TeleportService")
 ---@diagnostic disable-next-line: undefined-global
 --Functions
 
+ 
 
------------
-
-
+--@I_Start_Soon!
 
 
 
@@ -37,7 +34,7 @@ function LoadFizly_Hub()
 		Discord = {
 			Enabled = false,
 			Invite = "", 
-			RememberJoins = true
+			RememberJoins = false
 	
 		},
 		KeySystem = true, 
@@ -53,7 +50,7 @@ function LoadFizly_Hub()
 		
 		}
 	})
-	--Functions
+	--Function
 
 	--GamesCorrect
 	
@@ -69,20 +66,51 @@ function LoadFizly_Hub()
 
 
 	
-	 
+	--g
 
 	--Patched
 		function Patched()
+      
+			Rayfield:Notify({
+				Title = "Patched",
+				Content = "Our Script got Patched or We Adding something Please Wait Until we end fixing it.",
+				Duration = 6.5,
+				Image = 4483362458,
+			})
+                  wait(7)
+				  Rayfield:Destroy()
+
 
 		end
+		
 		--OutDated
 		function OutDated()
+			Rayfield:Notify({
+				Title = "OutDated",
+				Content = "This is OutDated Version We copied you link to discord This version will get deleted soon",
+				Duration = 6.5,
+				Image = 4483362458,
+				
+			})
+
+
 			
 		end
-         --Error
-		 function Errors()
+		--UnsupportVersion
+		function UnsupportVersion()  
+			Rayfield:Notify({
+				Title = "Deleted",
+				Content = "This version got deleted because it was old version Pls Join to the discord (link)",
+				Duration = 6.5,
+				Image = 4483362458,
+				
+			})
+			Rayfield:Destroy()  
 			
-		 end
+		end
+		
+         --Error
+			
 
 
 
@@ -149,9 +177,11 @@ local Button = Tab1:CreateButton({
 				Ignore = {
 					Name = "Load Auto Strat v.1.0",
 					Callback = function()
-						
-             --Load Auto Strat
-			 
+						 loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/kd")()
+                             wait(2)
+							 Rayfield:Destroy()
+					
+			  
 					end
 				},
 			},
@@ -291,7 +321,6 @@ end
 			},
 		})
 		wait(7)
-		Choose_Load()
 	end
 
 
