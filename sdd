@@ -1,8 +1,3 @@
-
-
-
-
-
 ---@diagnostic disable-next-line: undefined-global
 --Functions
 
@@ -18,34 +13,34 @@
 
 
 
-function LoadFizly_Hub()
+function LoadXeplic_Hub()
 
 	local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 	
 	
 	local Window = Rayfield:CreateWindow({
-		Name = "Fizly Hub",
-		LoadingTitle = "Welcome To Fizly Hub v.1.0",
-		LoadingSubtitle = "by Time Fixty#1570",
+		Name = "Xeplic Hub",
+		LoadingTitle = "Welcome To Xeplic Hub v.1.6",
+		LoadingSubtitle = "by Xeplicy#3301",
 		ConfigurationSaving = {
 			Enabled = true,
-			FolderName = "Fizly Hub",
-			FileName = "Fizly Hub File"
+			FolderName = "Xeplic Hub",
+			FileName = " Xeplic File"
 		},
 		Discord = {
-			Enabled = false,
-			Invite = "", 
+			Enabled = true,
+			Invite = "AHGJm5fGsN", 
 			RememberJoins = false
 	
 		},
 		KeySystem = true, 
 		KeySettings = {
-			Title = "Fizly Hub Checking",
+			Title = "Fizly Hub Checking Key System",
 			Subtitle = "Key System",
-			Note = "Join the discord for Key (soon) ",
+			Note = "Join the discord for Key (https://discord.gg/AHGJm5fGsN) ",
 			SaveKey = false,
 			GrabKeyFromSite = false,
-			Key = "ImUsingIt"
+			Key = "Released"
 	
 	
 		
@@ -112,7 +107,14 @@ function LoadFizly_Hub()
 		
          --Beta
  function BetaVersion()
+
+
+
 	
+	
+
+
+ 
  end
 
 			
@@ -121,25 +123,46 @@ function LoadFizly_Hub()
 
 	
 	---@diagnostic disable-next-line: undefined-global
+
+
+
+
+
+function ChangeLog()
+	
+end
+
+
+
+
+
 function ComingInFuture()
 	local Future = Window:CreateTab("Coming In Future", 4483362458) 
 	local Section = Future:CreateSection("Coming In Future")
-	local Paragraph = Future:CreateParagraph({Title = "Coming In Future", Content = "Version 2.0 Future soon (only 1 version will be support)"})
+	local Paragraph = Future:CreateParagraph({Title = "Coming In Future ", Content = ""})
 -----
 local Section1 = Future:CreateSection("+")
 
 local Label = Future:CreateLabel("+ Version 2.0 Cooming Soon.")
 local Label = Future:CreateLabel("+ V1.0 Will be Still Support.")
 local Label = Future:CreateLabel("+ More Auto Strats + Multi Auto Strats with new gui for this (very soon)")
-local Label = Future:CreateLabel("+ Credits will be enebladed")
+local Label = Future:CreateLabel("+ Credits and info  will be enebladed")
 ----------
 
 local Section = Future:CreateSection("-")
 local Label = Future:CreateLabel("-  sometimes Fizly Hub will be patched ")
-local Label = Future:CreateLabel("- Key Will change Join to discord to get key link ()  ")
+local Label = Future:CreateLabel("- Key Will change Join to discord to get key link (soon)  ")
 local Label = Future:CreateLabel("-  if the script will dont show window or something even notification then Library adding something. So we need to replace with new codes.")
+-----------------
+local Section1 = Future:CreateSection("*")
+local Label = Future:CreateLabel("* V.1.0 will be fixed")
+local Label = Future:CreateLabel("* ")
+local Label = Future:CreateLabel("* ")
+local Label = Future:CreateLabel("* ")
+local Label = Future:CreateLabel("* ")
 
 
+----------
 
 	
 end
@@ -147,7 +170,35 @@ end
 		function Notes()
 			local Tab = Window:CreateTab("Note", 4483362458) 
 			local Section = Tab:CreateSection("Notes Info")
-			local Paragraph = Tab:CreateParagraph({Title = "V.1.0 Note (still Support)", Content = "Version 1.0 Note"})
+			local Paragraph = Tab:CreateParagraph({Title = "Fizly Hub Note", Content = ""})
+             
+
+			--Added
+			local Section = Tab:CreateSection("Added")
+			local Label1 = Tab:CreateLabel("Added Note")
+
+
+
+
+			--Fixed
+			local Section = Tab:CreateSection("Fixed")
+			local Label1 = Tab:CreateLabel("Fixed Note")
+
+
+
+
+			--Deleted
+			local Section = Tab:CreateSection("Deleted")
+			local Label1 = Tab:CreateLabel("Fixed Note")
+
+
+
+
+
+
+
+			--------------
+			local Paragraph = Tab:CreateParagraph({Title = "V.1.0 Note (still Support)", Content = ""})
 
 
 
@@ -158,7 +209,7 @@ end
 				--Fixed
 				local Section = Tab:CreateSection("Fixed")
 				local Label2 = Tab:CreateLabel("Fixed Note")
-				local Paragraph = Tab:CreateParagraph({Title = "", Content = "+ fixed that accel didnt upgrade"})
+				local Paragraph = Tab:CreateParagraph({Title = "", Content = "+ fixed that sometimes   one accel didnt upgrade"})
 
                     
 				--Deleted
@@ -220,8 +271,24 @@ local Button = Tab1:CreateButton({
 })
 
 	     --END V.2.0
-		 
+		 local Paragraph = Tab1:CreateParagraph({Title = "Auto Strat V2.0 ", Content = "Version 2.0   (V2.1 Will be good Auto Strat)"})
+         
+		 local Paragraph = Tab1:CreateParagraph({Title = "Towers need", Content = ""})
+		local Paragraph = Tab1:CreateParagraph({Title = "Golden Perks", Content = ""})
+		local Paragraph = Tab1:CreateParagraph({Title = "Time", Content = ""})
+		local Paragraph = Tab1:CreateParagraph({Title = "Win Rate", Content = ""})
+		local Paragraph = Tab1:CreateParagraph({Title = "Map", Content = ""})
+		local Paragraph = Tab1:CreateParagraph({Title = "Mode", Content = "Molten"})
+		local Paragraph = Tab1:CreateParagraph({Title = "Coins Per/H", Content = ""})
+
+
+
+
 		 ----------------
+          ----END V.2.1	
+
+
+
 	end
 	
 		--Destroy Gui
@@ -280,7 +347,7 @@ local Button = Tab1:CreateButton({
 
 -----------Load Function
 function LoadFunction()
-	
+
 ComingInFuture()
 Notes()
 LoadAutoStrat_1()
@@ -415,7 +482,7 @@ FolderName = "Choose Hubs",
 FileName = "Choose Hubs"
 },
 Discord = {
-	Enabled = true,
+	Enabled = false,
 	Invite = "3thBJx2axb", 
 	RememberJoins = false
 }
@@ -424,11 +491,11 @@ Discord = {
 local Choose_Load = Window:CreateTab("Choose Hub ", 4483362458) 
 local Choose_Load_Section = Choose_Load:CreateSection("Choose hub (Hubs was Made By Time Fixty ) Check Info")
 local Button1 = Choose_Load:CreateButton({
-	Name = "Load Fizly Hub (My Own Hub with My Strats Get more info in Credits or Info)",
+	Name = "Load Xeplicy Hub ",
 	Callback = function()
 		Rayfield:Notify({
             Title = "Are You sure",
-            Content = "Are You Sure to Open Fizly Hub?",
+            Content = "Are You Sure to Open Xeplicy Hub?",
             Duration = 6.5,
             Image = 4483362458,
             Actions = { -- Notification Buttons
@@ -436,8 +503,7 @@ local Button1 = Choose_Load:CreateButton({
                     Name = "Im Sure!",
                     Callback = function()
 						loadstring(game:HttpGet"https://raw.githubusercontent.com/TimeFixty/g21sd/main/4.1")()
-						LoadFizly_Hub()
-                       
+						LoadXeplic_Hub()                       
                     end
                 },
             },
@@ -451,7 +517,7 @@ local Button2 = Choose_Load:CreateButton({
 	Callback = function()
         Rayfield:Notify({
             Title = "Are You sure",
-            Content = "Are You Sure to Open Money Maker Hub?",
+            Content = "Are You Sure to ??? ??? ?",
             Duration = 6.5,
             Image = 4483362458,
             Actions = { -- Notification Buttons
